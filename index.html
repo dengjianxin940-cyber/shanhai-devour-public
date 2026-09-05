@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《肉鸽：山海吞噬录》官方政策与公开信息中心</title>
+  <style>
+
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+      --warning-text: #92400e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --warning-bg: #451a03;
+        --warning-border: #78350f;
+        --warning-text: #fef3c7;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 20px 16px 60px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 640px) {
+      .container { padding: 20px 16px; border-radius: 8px; }
+    }
+    nav {
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 24px; margin-top: 0; border-bottom: 2px solid var(--primary); padding-bottom: 8px; }
+    h2 { font-size: 19px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    h3 { font-size: 16px; margin-top: 24px; }
+    h4 { font-size: 15px; margin-top: 16px; font-weight: 600; }
+    p, li { font-size: 15px; }
+    ul, ol { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    .owner-field {
+      font-weight: 600;
+    }
+    .meta-box {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .meta-box div { margin-bottom: 6px; }
+    .meta-box div:last-child { margin-bottom: 0; }
+    .notice-box {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border-left: 4px solid var(--warning-text);
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 620px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(0, 0, 0, 0.03);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 24px 0 16px;
+    }
+    .hero h1 {
+      border-bottom: none;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-top: 0;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+      transform: translateY(-2px);
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--primary);
+      font-size: 18px;
+    }
+    .card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .card-footer {
+      margin-top: auto;
+      padding-top: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    .info-section {
+      background: rgba(0, 0, 0, 0.015);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 20px;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>《肉鸽：山海吞噬录》</h1>
+      <p>Roguelike: Shanhai Devour · 官方政策与公开信息中心</p>
+    </div>
+
+    <div class="card-grid">
+      <a href="privacy.html" class="card">
+        <h3>📄 隐私政策</h3>
+        <p>详细说明本游戏如何保护用户隐私、最小化收集必要信息及数据安全存储与权利行使机制。</p>
+        <div class="card-footer">查看隐私政策 →</div>
+      </a>
+
+      <a href="agreement.html" class="card">
+        <h3>📜 用户服务协议</h3>
+        <p>明确玩家服务条款、单机数据自担规范、GPLv3 开源权利保障以及反作弊行为边界。</p>
+        <div class="card-footer">查看用户协议 →</div>
+      </a>
+
+      <a href="sdk.html" class="card">
+        <h3>🧩 第三方 SDK 目录</h3>
+        <p>详列 TapTap (Login/Compliance/Leaderboard)、libGDX、Glide 等第三方组件的合规清单与权限调用。</p>
+        <div class="card-footer">查看 SDK 清单 →</div>
+      </a>
+    </div>
+
+    <div class="info-section">
+      <h3>🏛️ 开源项目与开源协议说明（GPLv3）</h3>
+      <p>《肉鸽：山海吞噬录》核心程序代码基于著名开源地牢项目 <em>Shattered Pixel Dungeon</em>（原作者：Evan Debenham，衍生自 <em>Pixel Dungeon</em> 原作者：Oleg Dolya）依据 <strong>GNU General Public License v3.0 (GPL-3.0)</strong> 进行二次创作与演进。</p>
+      <ul>
+        <li><strong>开源代码保障</strong>：核心程序代码严格保持开源共享，用户享有合法的源码查阅、研读、修改与依许可重分发自由。</li>
+        <li><strong>GPL 对应源码 URL</strong>：<code>DEFERRED TO FINAL SOURCE RELEASE</code>。对应源码将在最终候选二进制冻结后，与该二进制同步发布，避免提前发布不匹配的源码版本。</li>
+        <li><strong>独立原创资产声明</strong>：对开发者独立创作且不受第三方开源许可证约束的原创美术、文案、标识等内容，其相关权利归相应权利人所有；第三方及开源内容依其各自许可证执行。</li>
+      </ul>
+    </div>
+
+    <div class="meta-box" style="margin-top: 24px;">
+      <div><strong>开发者 / 运营主体</strong>：<span class="owner-field">蜀都水獭工作室</span></div>
+      <div><strong>官方支持邮箱</strong>：<span class="owner-field">1279175758@qq.com</span></div>
+      <div><strong>官方发布包名</strong>：<code>com.deng.shanhaidevour</code></div>
+      <div><strong>页面状态</strong>：正式公示版</div>
+    </div>
+
+    <footer>
+      © 2026 《肉鸽：山海吞噬录》项目团队. 依据 GNU GPLv3 开源协议与相关法律法规维护.
+    </footer>
+  </div>
+</body>
+</html>

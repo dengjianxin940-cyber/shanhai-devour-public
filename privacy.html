@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《肉鸽：山海吞噬录》隐私政策</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+      --warning-text: #92400e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --warning-bg: #451a03;
+        --warning-border: #78350f;
+        --warning-text: #fef3c7;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 20px 16px 60px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 640px) {
+      .container { padding: 20px 16px; border-radius: 8px; }
+    }
+    nav {
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 24px; margin-top: 0; border-bottom: 2px solid var(--primary); padding-bottom: 8px; }
+    h2 { font-size: 19px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    h3 { font-size: 16px; margin-top: 24px; }
+    h4 { font-size: 15px; margin-top: 16px; font-weight: 600; }
+    p, li { font-size: 15px; }
+    ul, ol { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    .owner-field {
+      font-weight: 600;
+    }
+    .meta-box {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .meta-box div { margin-bottom: 6px; }
+    .meta-box div:last-child { margin-bottom: 0; }
+    .notice-box {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border-left: 4px solid var(--warning-text);
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 620px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(0, 0, 0, 0.03);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">← 首页</a>
+      <a href="privacy.html" style="font-weight: bold;">隐私政策</a>
+      <a href="agreement.html">用户服务协议</a>
+      <a href="sdk.html">第三方 SDK 目录</a>
+    </nav>
+
+    <h1>《肉鸽：山海吞噬录》隐私政策</h1>
+
+    <div class="meta-box">
+      <div><strong>页面状态</strong>：正式公示版</div>
+      <div><strong>应用名称</strong>：肉鸽：山海吞噬录（英文/内部名称：Roguelike: Shanhai Devour）</div>
+      <div><strong>应用包名</strong>：<code>com.deng.shanhaidevour</code></div>
+      <div><strong>开发者名称</strong>：<span class="owner-field">蜀都水獭工作室</span></div>
+      <div><strong>生效日期</strong>：<span class="owner-field">2026-09-07</span></div>
+    </div>
+
+    <h2>引言</h2>
+    <p>欢迎使用由 <span class="owner-field">蜀都水獭工作室</span>（以下简称“我们”）开发的单机肉鸽地牢冒险游戏《肉鸽：山海吞噬录》（以下简称“本游戏”）。</p>
+    <p>我们高度重视个人信息保护与用户隐私安全。本隐私政策旨在向您说明我们在您使用本游戏过程中如何收集、使用、存储与保护您的个人信息，以及您所享有的相关权利。</p>
+    <div class="notice-box">
+      <strong>【特别提示】</strong>请您在下载、安装、注册、登录或使用本游戏前，仔细阅读并理解本政策的全部内容。当您选择同意或开始使用本游戏，即表示您理解并同意我们按照本政策处理相关信息。如您为未成年人，请在法定监护人的陪同和指导下阅读本政策。
+    </div>
+
+    <h2>一、适用范围</h2>
+    <p>本政策适用于《肉鸽：山海吞噬录》移动客户端应用程序及相关服务。本游戏为纯单机核心体验的 Roguelike 地牢冒险游戏，所有关卡生成、战斗逻辑、怪物掉落、血脉吞噬与属性升级等核心玩法均在您的本地设备端运行。除提供 TapTap 账号登录、防沉迷合规核验及通关排行榜展示等必要平台互联服务外，不涉及与游戏玩法无关的数据收集。</p>
+
+    <h2>二、我们收集与使用的信息</h2>
+    <p>我们遵循“合法、正当、必要”原则，仅为实现本游戏的基本功能及合规要求处理必要信息：</p>
+
+    <h4>1. TapTap 账号登录服务</h4>
+    <ul>
+      <li><strong>服务提供</strong>：本游戏账号登录由 TapTap 官方登录 SDK（易玩（上海）网络科技有限公司）提供。</li>
+      <li><strong>信息内容</strong>：当您选择使用 TapTap 账号授权登录时，TapTap SDK 会处理您的 TapTap 账号唯一标识、公开昵称及公开头像，用于确认您的用户身份并保持会话状态。根据 TapSDK 公式合规说明，SDK 还可为系统兼容与故障排查处理系统版本、设备型号、CPU 信息、网络类型、Android ID 和设备内存信息。</li>
+      <li><strong>开发者保护声明</strong>：<strong>本游戏自身代码不收集、不读取、不保存您的手机号码、短信验证码或登录密码</strong>。上述鉴权凭证由 TapTap 官方客户端与安全沙箱加密处理。</li>
+    </ul>
+
+    <h4>2. 防沉迷合规服务</h4>
+    <ul>
+      <li><strong>合规要求</strong>：根据国家防止未成年人沉迷网络游戏的相关规定，网络游戏用户须进行实名认证。</li>
+      <li><strong>处理机制</strong>：本游戏接入 TapTap 官方实名认证与防沉迷合规服务。实名认证流程由 TapTap 服务端依法收集并核验；SDK 可为系统兼容、故障排查与网络有效性检测处理系统版本、设备型号、CPU 信息、网络类型、Android ID、设备内存信息和网络状态。</li>
+      <li><strong>开发者保护声明</strong>：<strong>本游戏客户端及开发团队不收集、不读取、不存储您的真实姓名与身份证件号码明文</strong>。客户端依据 TapTap Compliance SDK 返回的合规状态（如：ALLOWED 放行 / RESTRICTED 限制游玩、剩余允许游玩时长）执行游戏准入、未成年人限玩和 fail-closed 控制。</li>
+    </ul>
+
+    <h4>3. TapTap 通关排行榜服务</h4>
+    <ul>
+      <li><strong>功能场景</strong>：当您在游戏中成功通关第15层终极试炼时，游戏会将您的通关成绩提交至 TapTap 官方排行榜服务。</li>
+      <li><strong>上传与 SDK 处理数据</strong>：本游戏业务层上传通关耗时（毫秒数）、通关积分及排行榜服务所需的 TapTap 账号标识。排行榜 SDK 还可为系统兼容与故障排查处理系统版本、设备型号、CPU 信息、网络类型、Android ID 和设备内存信息。</li>
+      <li><strong>账户隔离保护</strong>：本游戏在本地待上报队列中对用户信息采用不可逆的哈希算法派生安全标识（<code>ownerKey</code>），<strong>不将原始 OpenID 作为自定义追踪参数对外透传</strong>，保障数据隔离。</li>
+    </ul>
+
+    <h4>4. 单机本地存档与数据</h4>
+    <ul>
+      <li><strong>本地私有存储</strong>：您的地牢关卡进度、异兽血脉属性、装备道具、历史挑战记录等单机游戏数据全部保存在您设备操作系统的私有应用沙箱目录（<code>/data/data/com.deng.shanhaidevour/files/</code>）中。</li>
+      <li><strong>无云端同步</strong>：当前版本未接入云端存档同步功能，您的单机数据不会自动上传至外部网络服务器。</li>
+    </ul>
+
+    <h4>5. 关于遥测与数据统计的真实说明</h4>
+    <p>本游戏当前未接入云端遥测或第三方用户行为埋点服务，开发者不为行为分析目的追踪您的游戏内操作轨迹。TapTap 登录、合规认证和排行榜功能中的必要数据处理，以本政策及《第三方 SDK 目录与个人信息共享公示》为准。</p>
+
+    <h2>三、设备权限使用说明</h2>
+    <p>为确保游戏基础运行与触觉体验，本游戏在运行期间可能申请或调用以下系统权限：</p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>权限名称</th>
+            <th>权限类型</th>
+            <th>使用目的与场景</th>
+            <th>是否可关闭</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>android.permission.INTERNET</code></td>
+            <td>正常权限</td>
+            <td>用于 TapTap 账号授权认证、防沉迷状态在线校验、排行榜数据提交与查询</td>
+            <td>否（关闭后无法使用联网账号与排行功能；核心玩法为单机本地运行，实际离线可用范围取决于当前账号、合规状态及客户端已完成的校验状态）</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+            <td>正常权限</td>
+            <td>用于检测设备当前网络连接状态（Wi-Fi/移动数据/断网），以感知网络波动并处理账号鉴权、排行榜提交或维持已授权的本地会话稳定运行</td>
+            <td>否</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.VIBRATE</code></td>
+            <td>正常权限</td>
+            <td>用于战斗受击、暴击等场景的触觉震动反馈，提升游戏打击感</td>
+            <td>是（可在系统设置中关闭触觉反馈）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>【明确排除说明】</strong></p>
+    <ul>
+      <li><strong>外置存储权限已彻底移除</strong>：本游戏已在 Android 清单中应用移除规则，<strong>彻底排除了 <code>READ_EXTERNAL_STORAGE</code> 和 <code>WRITE_EXTERNAL_STORAGE</code> 权限</strong>，本游戏及接入的任何 SDK 均不访问您手机中的照片、相册或外部媒体文件。</li>
+      <li><strong>零敏感危险权限</strong>：本游戏<strong>不申请、不调用</strong>读取手机状态（<code>READ_PHONE_STATE</code>）、定位（<code>ACCESS_FINE_LOCATION</code>）、相机（<code>CAMERA</code>）、麦克风（<code>RECORD_AUDIO</code>）、通讯录（<code>READ_CONTACTS</code>）或短信权限。</li>
+    </ul>
+
+    <h2>四、第三方 SDK 目录与数据共享</h2>
+    <p>为保障产品功能的稳定实现，本游戏接入了必要的第三方 SDK。有关接入 SDK 的详细信息、收集数据类型及提供方隐私政策，请参阅附录《<a href="sdk.html">第三方 SDK 目录与个人信息共享公示</a>》：</p>
+    <ul>
+      <li><strong>主要第三方提供方</strong>：易玩（上海）网络科技有限公司（TapTap SDK，包括 Core、Login、Compliance、Leaderboard、ThemisLite 组件）。</li>
+      <li><strong>共享原则</strong>：我们仅在合法、正当、必要且明确的目的下共享最小限度的数据，且依赖第三方平台根据其自身隐私政策履行保护义务。</li>
+    </ul>
+
+    <h2>五、个人信息存储期限与安全防护</h2>
+    <ol>
+      <li><strong>存储地点</strong>：依据中华人民共和国法律法规规定，本游戏境内运营过程中涉及的个人信息存储于中华人民共和国境内（具体由第三方 TapTap 平台依其隐私政策执行）。</li>
+      <li><strong>存储期限</strong>：
+        <ul>
+          <li>游戏内本地存档：保存在您的本地设备中，直至您主动卸载应用或清除应用沙箱数据。</li>
+          <li>账号与排行榜数据：由 TapTap 平台在法律法规规定的期限内保存，直至您注销 TapTap 账号或排行榜周期维护。</li>
+        </ul>
+      </li>
+      <li><strong>安全防护措施</strong>：
+        <ul>
+          <li>网络通信采用 HTTPS 传输加密。</li>
+          <li>正式包启用 R8 压缩与混淆，并移除调试接口，以降低静态分析与非授权篡改风险。</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>六、用户权利行使</h2>
+    <p>按照相关法律法规，您在个人信息处理活动中享有查阅、更正、删除等权利：</p>
+    <ol>
+      <li><strong>查阅与更正</strong>：您可通过 TapTap 客户端查阅或修改您的账号昵称、头像等个人资料。</li>
+      <li><strong>删除与清除</strong>：您可以通过清除游戏应用沙箱数据或卸载本游戏彻底删除保存在本地设备中的所有单机游戏进度与排队数据。如需注销或删除 TapTap 账号数据，请按照 TapTap 官方指引操作。</li>
+      <li><strong>撤回同意</strong>：您可以在系统设置中随时调整网络、震动等权限授权。</li>
+    </ol>
+
+    <h2>七、未成年人保护特别约定</h2>
+    <ol>
+      <li>我们高度重视对未成年人个人信息和身心健康的保护。</li>
+      <li>本游戏严格接入并执行防沉迷法定要求：
+        <ul>
+          <li>依据 TapTap Compliance SDK 返回的合规状态，仅在周五、周六、周日和法定节假日每日 20 时至 21 时向未成年人提供不超过 1 小时的游戏服务；</li>
+          <li>严格落实实名制，未实名认证用户限制进入；</li>
+          <li>本游戏当前版本为完全免费单机体验，<strong>不开放任何应用内充值、虚拟道具购买或付费通道</strong>，杜绝未成年人非理性消费风险。</li>
+        </ul>
+      </li>
+      <li>若您是未成年人的监护人，当您对所监护的未成年人使用本游戏有任何疑问时，请通过本政策列明的联系方式与我们联系。</li>
+    </ol>
+
+    <h2>八、隐私政策的更新与修订</h2>
+    <p>为了给您提供更好的服务以及随着法律法规政策的变化，本隐私政策可能会适时修订。当本政策条款发生变更时，我们将在游戏版本更新说明或应用商店页面显著位置发布更新版本。</p>
+
+    <h2>九、联系我们</h2>
+    <p>如您对本隐私政策或个人信息保护事宜有任何疑问、意见、投诉或建议，您可以通过以下方式与我们取得联系：</p>
+    <ul>
+      <li><strong>开发者联系邮箱</strong>：<span class="owner-field">1279175758@qq.com</span></li>
+      <li><strong>社区反馈入口</strong>：TapTap 游戏官方专区反馈板块</li>
+      <li><strong>法务/隐私联系人</strong>：<span class="owner-field">1279175758@qq.com</span></li>
+    </ul>
+    <p>我们将在验证您的真实身份后，依据适用法律法规和平台流程尽快予以答复与处理。</p>
+
+    <footer>
+      © 2026 《肉鸽：山海吞噬录》项目团队. 保留相应合法权利.
+    </footer>
+  </div>
+</body>
+</html>

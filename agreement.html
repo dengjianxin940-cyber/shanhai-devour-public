@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《肉鸽：山海吞噬录》用户服务协议</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+      --warning-text: #92400e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --border: #334155;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --warning-bg: #451a03;
+        --warning-border: #78350f;
+        --warning-text: #fef3c7;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 20px 16px 60px;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 640px) {
+      .container { padding: 20px 16px; border-radius: 8px; }
+    }
+    nav {
+      margin-bottom: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 24px; margin-top: 0; border-bottom: 2px solid var(--primary); padding-bottom: 8px; }
+    h2 { font-size: 19px; margin-top: 32px; border-bottom: 1px solid var(--border); padding-bottom: 6px; }
+    h3 { font-size: 16px; margin-top: 24px; }
+    h4 { font-size: 15px; margin-top: 16px; font-weight: 600; }
+    p, li { font-size: 15px; }
+    ul, ol { padding-left: 24px; }
+    li { margin-bottom: 8px; }
+    .owner-field {
+      font-weight: 600;
+    }
+    .meta-box {
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .meta-box div { margin-bottom: 6px; }
+    .meta-box div:last-child { margin-bottom: 0; }
+    .notice-box {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      padding: 14px 18px;
+      border-radius: 8px;
+      border-left: 4px solid var(--warning-text);
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 620px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: rgba(0, 0, 0, 0.03);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html">← 首页</a>
+      <a href="privacy.html">隐私政策</a>
+      <a href="agreement.html" style="font-weight: bold;">用户服务协议</a>
+      <a href="sdk.html">第三方 SDK 目录</a>
+    </nav>
+
+    <h1>《肉鸽：山海吞噬录》用户服务协议</h1>
+
+    <div class="meta-box">
+      <div><strong>页面状态</strong>：正式公示版</div>
+      <div><strong>应用名称</strong>：肉鸽：山海吞噬录（英文/内部名称：Roguelike: Shanhai Devour）</div>
+      <div><strong>应用包名</strong>：<code>com.deng.shanhaidevour</code></div>
+      <div><strong>开发者名称</strong>：<span class="owner-field">蜀都水獭工作室</span></div>
+      <div><strong>生效日期</strong>：<span class="owner-field">2026-09-07</span></div>
+    </div>
+
+    <h2>1. 导言与协议效力</h2>
+    <p>1.1 欢迎使用单机肉鸽地牢冒险游戏《肉鸽：山海吞噬录》（以下简称“本游戏”）。本《用户服务协议》（以下简称“本协议”）由您（以下简称“用户”或“玩家”）与 <span class="owner-field">蜀都水獭工作室</span>（以下简称“我们”）共同订立。</p>
+    <p>1.2 请您在下载、安装、复制、进入或使用本游戏前，审慎阅读并充分理解本协议的全部条款，特别是免除或限制我们责任的免责条款、对用户权利进行限制的条款、约定争议解决方式和管辖的条款。</p>
+    <div class="notice-box">
+      <strong>【特别提示】</strong>当您点击确认同意、下载安装或实际开始进入游戏，即视为您已阅读并同意接受本协议的全部约定。如您不同意本协议的任何条款，请立即停止下载、安装并退出本游戏。
+    </div>
+    <p>1.4 <strong>【未成年人特别注意事项】</strong>：如您未满十八周岁，请在法定监护人（以下简称“监护人”）的陪同和指导下阅读本协议，并在取得监护人明示同意后方可使用本游戏。</p>
+
+    <h2>2. 账号注册、使用与安全</h2>
+    <p>2.1 <strong>TapTap 账号接入</strong>：本游戏提供 TapTap 账号一键授权登录服务。您使用 TapTap 账号登录本游戏的，应当遵守 TapTap 平台的用户服务协议及隐私政策。</p>
+    <p>2.2 <strong>账号管理与安全</strong>：用户应当妥善保管本人的 TapTap 账号与密码。因用户个人原因导致账号泄露、丢失或被他人非法使用的，由此产生的损失和责任由用户自行承担。</p>
+    <p>2.3 <strong>实名认证规范</strong>：依据国家防止未成年人沉迷网络游戏的相关法律法规要求，使用本游戏联网功能（包括排行榜）的用户必须完成 TapTap 官方实名认证。用户应提供真实、合法的身份信息，严禁使用虚假身份信息进行认证。</p>
+
+    <h2>3. 游戏服务与单机本地数据特别说明</h2>
+    <p>3.1 <strong>单机运行特征与准入说明</strong>：本游戏的核心玩法为单机本地运行；部分启动/准入场景可能需要联网完成 TapTap 登录或防沉迷合规校验。实际离线可用范围取决于当前账号、合规状态及客户端已完成的校验状态。</p>
+    <p>3.2 <strong>本地存档机制与风险自担</strong>：</p>
+    <ul>
+      <li>用户的全部游戏进度（包括角色属性、地牢楼层、战利品及背包数据）均保存在用户本地设备的私有应用沙箱目录中。</li>
+      <li><strong>本游戏当前版本未开通云端存档同步功能</strong>。</li>
+      <li>因用户主动卸载游戏应用、清理应用缓存沙箱、设备刷机、越狱、系统重置、更换设备或硬件损坏等原因造成本地存档丢失的，<strong>相关风险与损失由用户自行承担，我们无法提供云端找回或数据补偿服务</strong>。</li>
+    </ul>
+
+    <h2>4. GPLv3 权利保障与反作弊/违规行为区分</h2>
+    <p>4.1 <strong>用户承诺规范</strong>：用户在使用本游戏过程中，应当遵守宪法、法律法规及公序良俗，不得利用本游戏实施任何违法犯罪、侵害他人合法权益或破坏网络安全秩序的行为。</p>
+    <p>4.2 <strong>GPLv3 许可范围内的法定自由（GPL-Permitted Rights）</strong>：<br>
+    依据本游戏核心代码所遵循的 GNU General Public License v3.0 (GPLv3)，用户在遵循 GPLv3 许可证全部条款的前提下，享有以下明确权利，本协议绝不对此类正当行使 GPL 权利的行为进行限制：</p>
+    <ul>
+      <li>获取、查阅、研读受 GPLv3 覆盖的本游戏开源部分源代码；</li>
+      <li>依据 GPLv3 许可条款，在保留原作者版权声明的前提下修改源代码；</li>
+      <li>依据 GPLv3 许可条款，向第三方重新分发您修改或未修改的派生源代码或二进制副本。</li>
+    </ul>
+    <p>4.3 <strong>禁止的滥用与违规破坏行为（Prohibited / Abusive Conduct）</strong>：<br>
+    为维护公共游戏环境的公平性与合法性，用户在使用本游戏及相关网络服务时，严禁实施以下违规破坏行为：</p>
+    <ul>
+      <li><strong>公共排行榜作弊</strong>：利用内存修改器、变速外挂、脚本脱机挂等手段在 TapTap 公共排行榜中恶意刷分或虚构通关用时；</li>
+      <li><strong>伪造网络载荷</strong>：伪造、拦截、篡改或非法重放提交至 TapTap 排行榜的通关成绩（Clear Time / Clear Score）网络协议数据包；</li>
+      <li><strong>绕过平台安全门禁</strong>：破坏、绕过或逆向规避 TapTap 账号登录门禁、国家防沉迷合规拦截或客户端完整性校验逻辑；</li>
+      <li><strong>冒用与侵犯权益</strong>：冒用他人 TapTap 身份凭证、伪造玩家身份或侵害任何第三方的合法权益；</li>
+      <li><strong>滥用原创资产与商标</strong>：在 GPLv3 许可范围之外，未经授权擅自提取、盗用或商业化使用本游戏独立创作的美术立绘、角色精灵帧、原创音效音乐或注册商标。</li>
+    </ul>
+    <p>4.4 <strong>违规惩处措施</strong>：一经系统安全检测或合理证据证实存在上述违规行为的，我们有权视情节轻重采取以下措施：清除或回退违规账号在 TapTap 通关排行榜上的虚假成绩、取消登榜资格、记录本地安全拦截特征，并保留追究相应法律责任的权利。</p>
+
+    <h2>5. 未成年人保护与防沉迷服务</h2>
+    <p>5.1 我们严格落实国家关于未成年人防沉迷的各项法定举措。本游戏接入 TapTap 官方实名认证与防沉迷合规服务。</p>
+    <p>5.2 经 TapTap 官方合规服务核验为未成年人的用户，客户端依据 TapTap Compliance SDK 返回的状态执行法定限玩与时段控制（仅在周五、周六、周日和法定节假日每日 20 时至 21 时提供 1 小时服务）。时段之外或限时耗尽后，游戏将依法自动限制进入或提示退出。</p>
+    <p>5.3 <strong>零内购付费说明</strong>：本游戏当前版本为完全免费的单机独立作品，游戏内不存在任何商业化充值、虚拟道具购买或内购通道，不存在未成年人非理性消费通道。</p>
+
+    <h2>6. 知识产权与原创资产保护</h2>
+    <p>6.1 对开发者独立创作且不受第三方开源许可证约束的原创美术、文案、标识等内容，其相关权利归相应权利人所有；第三方及开源内容依其各自许可证执行。</p>
+    <p>6.2 任何第三方未经事先书面授权许可，不得擅自商业化使用或侵犯上述独立创作的原创美术素材、文案与商业标识。</p>
+
+    <h2>7. 开源组件特别授权声明（GPLv3）</h2>
+    <p>7.1 本游戏基于开源作品 <em>Shattered Pixel Dungeon</em>（原作者：Evan Debenham，衍生自 <em>Pixel Dungeon</em> 原作者：Oleg Dolya）进行二次创作与演进。</p>
+    <p>7.2 <strong>开源合规承诺</strong>：</p>
+    <ul>
+      <li>本游戏核心程序代码严格遵循 <strong>GNU General Public License v3.0 (GPL-3.0)</strong> 保持开源共享。</li>
+      <li>用户可在游戏内“关于 -> 开源协议”界面查阅完整的 GPL v3.0 许可证文本。</li>
+      <li>GPL 对应源码 URL 当前状态为 <code>DEFERRED TO FINAL SOURCE RELEASE</code>。对应源码将在最终候选二进制冻结后与该二进制同步发布。</li>
+      <li>开源授权仅适用于 GPLv3 适用的程序代码；对开发者独立创作且不受第三方开源许可证约束的原创美术、文案、标识等内容，其相关权利归相应权利人所有；第三方及开源内容依其各自许可证执行。</li>
+    </ul>
+
+    <h2>8. 服务变更、中断与终止</h2>
+    <p>8.1 鉴于网络服务与移动终端软硬件环境的客观情况，我们保留根据运营需要、法律政策变更或技术升级，对本游戏的在线功能（如排行榜功能）进行调整、更新、暂停或终止的权利。</p>
+    <p>8.2 如遇不可抗力事件导致第三方 TapTap 平台服务中断的，我们将在合理范围内协同处理，但不承担超出法律规定范围的违约赔偿责任。</p>
+
+    <h2>9. 免责声明与责任限制</h2>
+    <p>9.1 本游戏按照“现状”及“可提供”的状态提供给用户体验。我们致力于保障游戏稳定运行，但不对非可控的设备兼容性异常或第三方网络波动做超出行业合理标准的绝对承诺。</p>
+    <p>9.2 在适用法律允许的范围内，我们不对因用户个人设备故障、误删本地数据或不可抗力导致的数据丢失承担赔偿责任。</p>
+
+    <h2>10. 协议修订与争议管辖</h2>
+    <p>10.1 我们有权根据产品迭代或政策法规变化适时修订本协议条款。修改后的协议将通过游戏或应用商店页面适时公布。若您不同意修改后的内容，可随时停止使用本游戏；若您继续使用，即视为您接受修改后的协议。</p>
+    <p>10.2 本协议的订立、执行、解释及争议解决均适用中华人民共和国大陆地区法律。</p>
+    <p>10.3 若双方就本协议发生争议，应首先友好协商解决；协商不成的，任何一方均可依法向有管辖权的人民法院提起诉讼。</p>
+
+    <h2>11. 联系方式</h2>
+    <p>如您对本协议内容有任何疑问、建议或反馈，请通过以下方式联系我们：</p>
+    <ul>
+      <li><strong>官方客服邮箱</strong>：<span class="owner-field">1279175758@qq.com</span></li>
+      <li><strong>玩家交流社区</strong>：TapTap 《肉鸽：山海吞噬录》官方专区</li>
+    </ul>
+
+    <footer>
+      © 2026 《肉鸽：山海吞噬录》项目团队. 保留相应合法权利.
+    </footer>
+  </div>
+</body>
+</html>
